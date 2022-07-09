@@ -19,5 +19,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = ""
-"Bug Tracker" = ""
+"Homepage" = "https://github.com/sunjp704/randflow"
+"Bug Tracker" = "https://github.com/sunjp704/randflow/issues"
