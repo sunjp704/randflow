@@ -4,15 +4,12 @@ from .spectrum import Spectrum
 
 
 class Point(object):
-
-    def __init__(
-            self, name, x, y, z, u_avg, turbulence: Tuple[float, float, float,
-                                                          float, float,
-                                                          float]) -> None:
+    def __init__(self, name, loction: Tuple[float, float, float], u_avg, turbulence: Tuple[float, float, float, float, float,
+                                                                                           float]) -> None:
         self.name = name
-        self.x = x
-        self.y = y
-        self.z = z
+        self.x = loction[0]
+        self.y = loction[1]
+        self.z = loction[2]
         self.u_avg = u_avg
         self.turb = turbulence
 
