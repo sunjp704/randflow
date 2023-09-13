@@ -27,10 +27,10 @@ class Spectrum(object):
         Sv = 4 * (Iv * u_avg)**2 * Lv / u_avg * (
             1 + 188.4 *
             (2 * fn * Lv / u_avg)**2) / (1 + 70.8 *
-                                         (fn * Lv / u_avg)**2)**(11 / 6)
+                                         (2 * fn * Lv / u_avg)**2)**(11 / 6)
         Sw = 4 * (Iw * u_avg)**2 * Lw / u_avg * (
             1 + 188.4 *
             (2 * fn * Lw / u_avg)**2) / (1 + 70.8 *
-                                         (fn * Lw / u_avg)**2)**(11 / 6)
+                                         (2 * fn * Lw / u_avg)**2)**(11 / 6)
 
         return vstack((Su, Sv, Sw))
